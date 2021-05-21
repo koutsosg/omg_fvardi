@@ -1,54 +1,70 @@
 import React from "react";
 import { OmgNavigator, LayoutSide } from "omgad-component/lib";
 import { Home } from "../pages/Home";
-import { About } from "../pages/About";
+import { People } from "../pages/People";
+import { Firms } from "../pages/Firms";
+
+import logo from "../assets/avatar2.jpg";
+import overlay from "../assets/overlay.png";
+import imgback from "../assets/1.jpg";
+import ModalMain from "./Modal";
+
+const website = {
+  name: "Φωτεινή Βαρδή",
+  url: "/",
+  h1: "Φωτεινή Βαρδή",
+  h2: "Διακεκριμένη Ασφαλιστική Σύμβουλος",
+  p:
+    "στην Εθνική Ασφαλιστική. Δραστηριοποιούμαι στην εταιρία από το 2002 και διαθέτω εξειδικευμένη εμπειρία στην αποτελεσματική διαχείριση κινδύνων...",
+  quicklink: "",
+  quicklinkt: "",
+  modal: <ModalMain />,
+};
 
 const navLinks = [
-  { to: "/", text: "Home" },
+  { to: "/", text: "ΑΡΧΙΚΗ" },
   {
     to: "/about",
-    text: "About",
+    text: "ΥΠΗΡΕΣΙΕΣ ",
     submenu: [
-      { text: "hello", to: "/" },
-      { text: "world", to: "/about" },
-    ],
-  },
-  {
-    to: "/service",
-    text: "Service",
-    submenu: [
-      { text: "hello", url: "/" },
-      { text: "world", url: "/" },
+      { text: "ΦΥΣΙΚΑ ΠΡΟΣΩΠΑ", to: "/φυσικά-πρόσωπα" },
+      { text: "ΝΟΜΙΚΑ ΠΡΟΣΩΠΑ ", to: "/νομικά-πρόσωπα" },
     ],
   },
 ];
 
 const links = [
   { to: "/", component: <Home /> },
-  { to: "/about", component: <About /> },
+  { to: "/φυσικά-πρόσωπα", component: <People /> },
+
+  { to: "/νομικά-πρόσωπα", component: <Firms /> },
 ];
 
 const slinks = [
   {
     icon: "facebook",
-    url: "/",
+    url: "https://www.facebook.com/Foteini.Vardi/",
   },
-  {
+  /*  {
     icon: "instagram",
     url: "/",
-  },
+  }, */
   {
     icon: "linkedin",
-    url: "/",
+    url: "https://www.linkedin.com/in/fotini-vardi-ba643a27",
   },
   {
-    icon: "twitter",
-    url: "/",
+    icon: "phone square",
+    url: "tel:6936997712",
+  },
+  {
+    icon: "whatsapp square",
+    url: "https://wa.me/306936997712",
   },
 
   {
     icon: "at",
-    url: "/",
+    url: "mailto:fotvardi@gmail.com",
   },
 ];
 
@@ -57,23 +73,24 @@ const classes = {
   headerin: "inner",
   avatarlink: "image avatar",
   avatarlogo: "",
-  h: "text-light",
-  p: "text-light",
+  h1: "text-light h4",
+  h2: "text-light h6",
+  p: "h6 text-light",
   quicklink: "text-light App-link",
   footer: "innerfoot",
   sicon: "",
   siconl: "",
   circular: true /* true / false */,
-  copyright: "",
+  copyright: "text-white",
   copyrightl: "",
   children:
-    "omg-layout_main" /* omg-layout_main_pad omg-layout_main_1280pad omg-layout_main_736pad */,
+    "omg-layout_main text-center bg-light omg-layout_main_pad omg-layout_main_1280pad omg-layout_main_980pad omg-layout_main_736pad",
   menu: "w-100 m-0 ",
   menuitem: "px-4",
   menulink: "text-light justify-content-center",
-  dropdown: "text-light text-right px-0 ",
+  dropdown: "text-light  px-4 ",
   dropdownmenu: "w-100 omg-layout_dropitem justify-content-end ",
-  droplink: "text-right ",
+  droplink: "",
   dropitem: "",
 };
 
@@ -82,7 +99,15 @@ export const Navigator = () => {
     <OmgNavigator
       links={links}
       container={(children) => (
-        <LayoutSide classes={classes} slinks={slinks} links={navLinks}>
+        <LayoutSide
+          website={website}
+          logo={logo}
+          classes={classes}
+          slinks={slinks}
+          imgback={imgback}
+          overlay={overlay}
+          links={navLinks}
+        >
           {children}
         </LayoutSide>
       )}

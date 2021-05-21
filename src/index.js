@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Navigator } from "./components/Navigator";
-
+import "./index.css";
 ReactDOM.render(
   <React.StrictMode>
     <Navigator />
