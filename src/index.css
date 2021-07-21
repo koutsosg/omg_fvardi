@@ -21,20 +21,25 @@ code {
   font-family: "Source Sans Pro", Literata, source-code-pro, Menlo, Monaco,
     Consolas, "Courier New", monospace;
 }
+@media screen and (min-width: 980px) {
+  #root {
+    height: 100vh;
+  }
+}
 .ui.menu {
   font-family: "Source Sans Pro", Literata, source-code-pro, Menlo, Monaco,
     Consolas, "Courier New", monospace;
 }
-/* a {
+.innerfoot a {
   color: #ecf0f3 !important;
   text-decoration: none;
   background-color: transparent;
 }
-a:hover {
+.innerfoot a:hover {
   color: #b1b1b1 !important;
   text-decoration: none !important;
   background-color: transparent;
-} */
+}
 .image.avatar img {
   border-radius: 100%;
   width: 50%;
@@ -52,9 +57,9 @@ div.modal {
   overflow: unset;
   outline: 0;
 }
-.button {
-/*   background: transparent !important;
-  color: aliceblue !important; */
+.inner .button {
+  background: transparent !important;
+  color: aliceblue !important;
 }
 .button:hover {
   background: transparent !important;
@@ -93,4 +98,13 @@ div.modal {
 }
 .cards {
   min-height: 220px !important;
+}
+a span.act,
+a:hover span.hov {
+  display: inline;
+}
+
+a:hover span.act,
+a span.hov {
+  display: none;
 }

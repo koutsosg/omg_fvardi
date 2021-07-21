@@ -52,8 +52,8 @@ function ModalMain() {
         <p>
           Ανήκουμε δε στη δομή της Επιθεώρησης του κ Γ.Φουφόπουλου η οποία
           βραβεύεται τα τελευταία 17 συναπτά έτη ως η ΠΡΩΤΗ της ΠΡΩΤΗΣ εταιρίας
-          στο χώρο μας και η οποία αριθμεί 100.000 ασφαλισμένους και 60
-          εκατομμύρια τζίρο για το 2020.
+          στο χώρο μας και η οποία αριθμεί 100.000 ασφαλισμένους και 60.000.000
+          τζίρο για το 2020.
         </p>
         <p>
           Για εσάς τους ασφαλισμένους μας η δύναμη μας αυτή είναι η δική σας
@@ -68,6 +68,9 @@ function ModalMain() {
         <p>Φωτεινή Βαρδή</p>
       </Modal.Content>
       <Modal.Actions>
+        <Button color="gray" onClick={() => setOpen(false)}>
+          <Icon name="checkmark" color="black" />
+        </Button>
         <Button color="gray" onClick={() => setOpen(false)}>
           <Icon name="checkmark" color="black" />
         </Button>

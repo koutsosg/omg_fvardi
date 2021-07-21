@@ -1,10 +1,13 @@
 import React from "react";
-import Table  from "../components/servicesinfo"
+import Table from "../components/servicesinfo";
 import { Linktopage } from "../components/Linktopage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIdCard } from "@fortawesome/free-solid-svg-icons";
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
-
+import { Faqs2 } from "./RetirmentsFaqs";
+import { Embed } from "semantic-ui-react";
+import ytcover from "../assets/eeae.jpg";
+import { Helmet } from "react-helmet";
 const info = {
   header: "ΥΠΗΡΕΣΙΕΣ",
 };
@@ -50,12 +53,25 @@ export const Home = () => {
   return (
     <>
       <div className="pb-5 text-left">
-        <h1 className=" text-center gray">ΤΙΤΛΟΣ</h1>
+        <Helmet>
+          <title>Φωτεινή Βαρδή</title>
+          <meta
+            name="description"
+            content="Διακεκριμένη Ασφαλιστική Σύμβουλος στην Εθνική Ασφαλιστική. Δραστηριοποιούμαι στην εταιρία από το 2002 και διαθέτω εξειδικευμένη εμπειρία στην αποτελεσματική διαχείριση κινδύνων"
+          />
+          <meta
+            name="keywords"
+            content="Ασφάλεια, υγεία, ασφαλιστική σύμβουλος, εθνική ασφαλιστική, οικογένια"
+          />
+        </Helmet>
+        <h1 className="px-5 text-center py-5 gray">
+          Σε καιρούς μεγάλων αλλαγών
+        </h1>
         <div className="px-5 gray">
           <p>
-            Σε καιρούς μεγάλων αλλαγών όπου η κοινωνία και οι δομές της
-            δοκιμάζεται από απρόβλεπτα φυσικά και μη γεγονότα ,κάθε πολύτιμο
-            αγαθό για εμάς γίνεται πιο εύθραυστο.
+            ....όπου η κοινωνία και οι δομές της δοκιμάζεται από απρόβλεπτα
+            φυσικά και μη γεγονότα ,κάθε πολύτιμο αγαθό για εμάς γίνεται πιο
+            εύθραυστο.
           </p>
           <p>
             Η υγεία μας , η ακεραιότητα της κατοικίας μας ,η εργασία μας, οι
@@ -70,7 +86,7 @@ export const Home = () => {
           </p>
           <p>
             Απολαμβάνω αμέριστη χαρά και ικανοποίηση από τα χαμόγελα των
-            ανθρώπων που βιώνουν την υπόσχεση που δώσμε στο συμβόλαιο τους να
+            ανθρώπων που βιώνουν την υπόσχεση που δώσαμε στο συμβόλαιο τους να
             γίνεται πράξη.
           </p>
           <p>
@@ -85,8 +101,20 @@ export const Home = () => {
           </p>
         </div>
       </div>
-    {/*   <Linktopage info={info} services={services} classes={classes} /> */}
-    <Table />
+      {/*   <Linktopage info={info} services={services} classes={classes} /> */}
+      <div className="p-5">
+        <Embed
+          autoplay={false}
+          brandedUI
+          color="white"
+          hd={false}
+          id="JqTNZ2zxu3M"
+          placeholder={ytcover}
+          alt="Ένωση Aσφαλιστικών Eταιριών"
+          source="youtube"
+        />
+      </div>
+      <Table />
     </>
   );
 };
