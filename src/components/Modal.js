@@ -68,9 +68,15 @@ function ModalMain() {
         <p>Φωτεινή Βαρδή</p>
       </Modal.Content>
       <Modal.Actions>
-        <Button color="gray" onClick={() => setOpen(false)}>
-          <Icon name="checkmark" color="black" />
-        </Button>
+        <a
+          className="btn btn-secondary"
+          href="tel:+306936997712"
+          title="Καλέστε με τώρα"
+        >
+          <span class="act">Επικοινωνία</span>
+          <span class="hov b">6936997712</span>
+        </a>
+
         <Button color="gray" onClick={() => setOpen(false)}>
           <Icon name="checkmark" color="black" />
         </Button>

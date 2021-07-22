@@ -54,14 +54,29 @@ export const Home = () => {
     <>
       <div className="pb-5 text-left">
         <Helmet>
-          <title>Φωτεινή Βαρδή</title>
+          <title>Φωτεινή Βαρδή - Ασφαλιστική Σύμβουλος</title>
           <meta
             name="description"
             content="Διακεκριμένη Ασφαλιστική Σύμβουλος στην Εθνική Ασφαλιστική. Δραστηριοποιούμαι στην εταιρία από το 2002 και διαθέτω εξειδικευμένη εμπειρία στην αποτελεσματική διαχείριση κινδύνων"
           />
           <meta
             name="keywords"
-            content="Ασφάλεια, υγεία, ασφαλιστική σύμβουλος, εθνική ασφαλιστική, οικογένια"
+            content="Ασφάλεια, υγεία, ασφαλιστική σύμβουλος, εθνική ασφαλιστική, οικογένια, Φωτεινή Βαρδή"
+          />
+
+          <meta property="og:url" content="https://fvardi-4u.gr" />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:title"
+            content="Φωτεινή Βαρδή - Ασφαλιστική Σύμβουλος"
+          />
+          <meta
+            property="og:description"
+            content="Διακεκριμένη Ασφαλιστική Σύμβουλος στην Εθνική Ασφαλιστική. Δραστηριοποιούμαι στην εταιρία από το 2002 και διαθέτω εξειδικευμένη εμπειρία στην αποτελεσματική διαχείριση κινδύνων"
+          />
+          <meta
+            property="og:image"
+            content="https://fvardi-4u.gr/logo192.png"
           />
         </Helmet>
         <h1 className="px-5 text-center py-5 gray">

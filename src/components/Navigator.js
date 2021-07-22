@@ -1,8 +1,7 @@
 import React from "react";
 import { OmgNavigator, LayoutSide } from "omgad-component/lib";
 import { Home } from "../pages/Home";
-import { People } from "../pages/People";
-import { Firms } from "../pages/Firms";
+
 import { HealthFaqs } from "../pages/HealthFaqs";
 import { RetirmentsFaqs } from "../pages/RetirmentsFaqs";
 import Table from "../components/servicesinfo";
@@ -12,6 +11,7 @@ import imgback from "../assets/1.jpg";
 import ModalMain from "./Modal";
 import { Preefooter } from "./Prefooter";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+
 const website = {
   name: "Φωτεινή Βαρδή",
   url: "/",
@@ -91,7 +91,7 @@ const classes = {
   quicklink: "text-light App-link",
   footer: "innerfoot",
   sicon: "gray",
-  siconl: "gray",
+  siconl: "white",
   circular: true /* true / false */,
   copyright: "text-white",
   copyrightl: "",
@@ -104,6 +104,7 @@ const classes = {
   dropdownmenu: "w-100 omg-layout_dropitem justify-content-end ",
   droplink: "",
   dropitem: "",
+  contactli: "linksg",
 };
 
 export const Navigator = () => {

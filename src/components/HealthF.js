@@ -275,6 +275,12 @@ export default class HealthFaqs extends Component {
               </p>
             </Accordion.Content>
           </Accordion>
+          <a
+            href="https://www.ethniki-asfalistiki.gr/defaultMRB.aspx?Page=health"
+            aria-label="Σύνδεσμος για πηγή κειμένου απο τη σελίδα της Εθνικής Ασφαλιστικής"
+          >
+            Πηγή απο τη Σελίδα τής Εθνικής Ασφαλιστικής
+          </a>
         </div>
       </>
     );

@@ -68,6 +68,7 @@ div.modal {
 .gray {
   color: gray;
 }
+
 @media screen and (min-width: 980px) {
   .omg-sidebar_layout {
     background-size: auto, contain;
@@ -107,4 +108,7 @@ a:hover span.hov {
 a:hover span.act,
 a span.hov {
   display: none;
+}
+.linkg {
+  color: #808080;
 }
